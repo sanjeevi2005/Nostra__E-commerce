@@ -287,15 +287,6 @@ body {
     }
 }
 
-.initial-scroll-animate {
-
-    transition: 3s;
-}
-
-.reveal-scroll-animate {
-    opacity: 1;
-}
-
 .services {
     margin-top: 10vw;
     margin-left: 20px;
@@ -314,7 +305,7 @@ body {
     top: 25%;
 }
 
-.service-list{
+.service-list {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -356,17 +347,265 @@ body {
         font-size: 1.5vw;
         right: 2%;
     }
-    
-    .service-list{
+
+    .service-list {
         gap: 10%;
     }
+
     .service-item {
         width: 40%;
     }
+
     .service-item h3 {
         font-size: 2vw;
     }
+
     .service-item p {
         font-size: 1.5vw;
     }
+}
+
+.new-arrivals {
+    margin-top: 5vw;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.new-arrivals-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 5%;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+}
+
+.new-arrival-item {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.new-arrival-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    border-radius: 2%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.new-arrival-item button {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    font-size: 2vw;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10%;
+    left: 16%;
+    z-index: 3;
+    border: none;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 50px;
+}
+
+.most-wanted {
+    margin-top: 5vw;
+    margin-right: 20px;
+    margin-bottom: 3vw;
+}
+
+.most-wanted-list {
+    display: flex;
+    gap: 50px;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+}
+
+.most-wanted-item {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.most-wanted-item img {
+    width: 20vw;
+    object-fit: cover;
+}
+
+.most-wanted-item p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2vw;
+    color: white;
+    background-color: rgb(243, 62, 62);
+    padding: 3px 8px;
+    border-radius: 15px;
+}
+
+.blackheart {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    padding: 6px;
+    cursor: pointer;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+    border-width: 0;
+}
+
+.blackheart img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+    .blackheart img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .blackheart {
+        bottom: 15px;
+        right: 15px;
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+.limited-offer {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    padding: 20px;
+    font-size: 2vw;
+}
+
+.limited-offer img {
+    width: 100%;
+    height: 100%100%;
+}
+
+.limited-offer-text {
+    padding: 5%;
+}
+
+.limited-offer button {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    color: #1D232C;
+    border-radius: 10px;
+
+    border: none;
+
+
+
+}
+
+/* Scroll Animate */
+
+.initial-scroll-animate {
+
+    transition: 3s;
+}
+
+.reveal-scroll-animate {
+    opacity: 0;
+}
+
+.news {
+    font-size: 2vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news input {
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid #1D232C 3px;
+
+}
+
+.news input:focus {
+    outline: none;
+    border: solid #ff6f61 3px;
+}
+
+.news button {
+
+    margin-top: 10px;
+    font-size: 1.8vw;
+    color: #E2E1E1;
+    background-color: #1D232C;
+    border-radius: 10px;
+    border: none;
+    padding: 10px
+}
+
+
+.icon {
+    width: 40px;
+    margin: 2vw;
+
+}
+
+.footer {
+    font-size: 2vw;
+    margin-top: 5vw;
+    padding: 40px;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    box-sizing: border-box;
+}
+
+.footer-container {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-box-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
 }

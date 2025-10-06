@@ -45,4 +45,23 @@ document.addEventListener("DOMContentLoaded", function() {
             imageContainer.style.marginLeft = `-${currentMargin}vw`;
         });
     }
+
+    // replace the previous wishlist handler with this more reliable toggle
+    var wishButtons = document.querySelectorAll(".blackheart");
+    wishButtons.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            var img = btn.querySelector("img");
+            if (!img) return;
+            var file = (img.getAttribute('src') || '').split('/').pop().toLowerCase();
+            if (file === 'blackheart.png') {
+                img.src = "./img/icons/redheart.png";
+                btn.setAttribute('aria-pressed', 'true');
+                img.alt = "liked";
+            } else {
+                img.src = "./img/icons/blackheart.png";
+                btn.setAttribute('aria-pressed', 'false');
+                img.alt = "not liked";
+            }
+        });
+    });
 });
