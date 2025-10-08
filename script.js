@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     navbarSideActions.addEventListener("click", function() {
         navbarSideMenu.style.display = "flex";
         navbarSideMenu.style.zIndex = "1000";
-        navbar.style.display = "none";
+        navbar.style.display = "";
 
     });
     closeBtn.addEventListener("click", function() {
