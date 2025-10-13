@@ -5,16 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collections</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -23,7 +16,6 @@
         <h2>Sign Up and GET 20% OFF your first order!</h2>
         <i class="fas fa-times"></i>
     </div>
-
     <div class="navbar_side-links">
         <p class="navbar_side-link"><a href="index.html">Home</a><span></span></p>
         <p class="navbar_side-link"><a href="index.html#arrivals">New Arrivals</a></p>
@@ -32,7 +24,6 @@
         <p class="navbar_side-link"><a href="contact.html">Contact Us</a></p>
         <p class="close-btn">x</p>
     </div>
-
     <div class="navbar">
         <h1>Nostra</h1>
         <div class="navbar-links">
@@ -48,6 +39,7 @@
             </div>
         </div>
     </div>
+
     <div class="divide-section">
         <div class="filter-section">
             <h3 class="filter-section-occasion" style="margin-bottom: 10px; margin-left:5px; font-size: 2.5vw;">
@@ -79,13 +71,20 @@
             <hr class="vertical-line">
         </div>
 
-        <div class="navbar-search">
-            <form class="search-form">
-                <input type="search" placeholder="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </form>
+        <div class="product-section">
+            <div class="navbar-search">
+                <form class="search-form">
+                    <input type="search" id="searchInput" placeholder="search">
+
+                    <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
+
+                </form>
+            </div>
+
+            <div class="products"></div>
         </div>
     </div>
+
     <div class="news">
         <h2>Join our News Letter</h2>
         <p style="text-align: center;">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
@@ -96,7 +95,6 @@
             <button> Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
         </div>
     </div>
-
     <div class="footer">
         <div class="footer-container">
             <div class="footer-box-1">
@@ -110,17 +108,11 @@
                     <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
                 </div>
             </div>
-
-
-
         </div>
-
         <p class="subtitle">@ 2023 Nostra.com</p>
     </div>
 
-
     <script src="collections.js"></script>
-
 </body>
 
 </html>

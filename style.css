@@ -438,7 +438,7 @@ body {
     margin-right: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scrollbar-width: none;
+    scrollbar-width: smooth;
 
 }
 
@@ -667,6 +667,7 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
+
 
 .contact-form {
     background-color: #1D232C;
